@@ -1,16 +1,57 @@
-# Visual Studio
+# =========================
+# Visual Studio / C++
+# =========================
 .vs/
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+ipch/
+*.pch
+Debug/
+Release/
+x64/
 bin/
 obj/
-*.user
-*.suo
-*.vcxproj.user
-*.docx
+*.log
 
+# =========================
 # Arduino / Embedded
+# =========================
 *.hex
 *.elf
 *.bin
+*.eep
+*.eep.backup
+*.dmp
 
-# SQLite temp/log files
+# =========================
+# SQLite / Database temp
+# =========================
 *.db-journal
+*.sqlite
+
+# =========================
+# Temporary / Misc
+# =========================
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+*.DS_Store
+
+# =========================
+# Documents / Personal
+# =========================
+*.docx
+*.xlsx
+*.pptx
+*.pdf
+
+# =========================
+# Exceptions / Keep in Git
+# =========================
+!Debug/Auto\ Gate.exe
+!Debug/sqlite3.dll
