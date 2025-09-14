@@ -1,4 +1,10 @@
 # =========================
+# Exceptions / Keep in Git
+# =========================
+!Debug/Auto\ Gate.exe
+!Debug/sqlite3.dll
+
+# =========================
 # Visual Studio / C++
 # =========================
 .vs/
@@ -49,9 +55,3 @@ obj/
 *.xlsx
 *.pptx
 *.pdf
-
-# =========================
-# Exceptions / Keep in Git
-# =========================
-!Debug/Auto\ Gate.exe
-!Debug/sqlite3.dll
