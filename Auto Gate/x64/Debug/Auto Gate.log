@@ -1,0 +1,6 @@
+﻿  Main.c
+C:\Users\Masas\Desktop\לימודים\הדרך אל העבודה\Private projects\Auto Gate\Auto Gate\Main.c(21,10): warning C4101: 'choice': unreferenced local variable
+  OpenCloseGate.c
+C:\Users\Masas\Desktop\לימודים\הדרך אל העבודה\Private projects\Auto Gate\Auto Gate\OpenCloseGate.c(31,10): warning C4101: 'DBlicensePlate': unreferenced local variable
+  Generating Code...
+  Auto Gate.vcxproj -> C:\Users\Masas\Desktop\לימודים\הדרך אל העבודה\Private projects\Auto Gate\x64\Debug\Auto Gate.exe

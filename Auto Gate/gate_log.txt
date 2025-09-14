@@ -1,0 +1,2 @@
+[2025-09-11 13:01:10] Plate: ABC1234, Status: Allowed
+[2025-09-11 13:01:49] Plate: 1234412, Status: Denied
