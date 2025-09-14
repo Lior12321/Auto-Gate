@@ -1,13 +1,14 @@
 #include "OpenCloseGate.h"
 
 bool isGateOpen = false;
+char validInputs[] = { 'y', 'Y', 'n', 'N' , 'q', 'Q' };
+
 
 bool vehicleDetected(){
     //currently just a simulation with user input
-    char input;
     printf("Is there a vehicle in front of the gate? (y/n): ");
-    scanf_s(" %c", &input, 1);
-    return (input == 'y' || input == 'Y');
+	return takingInput(validInputs);
+
 
     // TODO: here would be the actual sensor reading logic
     //return false;
@@ -17,6 +18,7 @@ bool vehicalPassing() {
     //currently just a simulation with user input
     char input;
     printf("Is the vehicle passed completely? (y/n): ");
+    return !takingInput(validInputs);
 	scanf_s(" %c", &input, 1);
     return !(input == 'y' || input == 'Y'); // return flase if vehicle is still passing
 
@@ -28,7 +30,7 @@ void openGate() {
     char licensePlate[8];
     char DBlicensePlate[8];
     printf("Enter license plate: ");
-    scanf_s("%19s", licensePlate, (unsigned)sizeof(licensePlate));
+    scanf_s("%8s", licensePlate, (unsigned)sizeof(licensePlate));
 
     char ownerName[30];
     if (checkLicensePlate(licensePlate,ownerName)) {
@@ -36,7 +38,7 @@ void openGate() {
         printf("Gate is opening!\n");
         isGateOpen = true;
         writeLog(licensePlate, isGateOpen);
-        sleep(10); // keep the gate open for 10 seconds
+        sleep(1); // keep the gate open for 10 seconds
     }
     else {
         printf("sorry, you are not allowed to enter!\n");
