@@ -6,6 +6,7 @@
 #include "DB.h"
 #include "Log.h"
 #include "Util.h"
+#include "manager.h"
 
 
 extern bool isGateOpen;

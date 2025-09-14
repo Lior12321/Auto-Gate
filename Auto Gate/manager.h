@@ -6,8 +6,11 @@
 #include "DB.h"
 #include "Log.h"
 
-void managerMode(char);
-void cleanup(void);
-void addCar(void);
-bool vehicleDetected(void);
-bool processVehicle(void);
+void managerMode();
+void addCarToDB();
+void searchForCar();
+void viewAllCars(void);
+void deleteCarFromDB(void);
+void deleteAllCars(void);
+void viewLogs(void);
+void getCarDetails(char*, char*);

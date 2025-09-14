@@ -31,7 +31,11 @@ void openGate() {
     char DBlicensePlate[8];
     printf("Enter license plate: ");
     scanf_s("%8s", licensePlate, (unsigned)sizeof(licensePlate));
-
+    if (!strcmp(licensePlate, "manager")){
+		//enter manager mode
+		managerMode();
+		return;
+	}
     char ownerName[30];
     if (checkLicensePlate(licensePlate,ownerName)) {
         printf("License plate %s recognized, Hello %s \n", licensePlate, ownerName);
