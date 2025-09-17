@@ -9,7 +9,6 @@ bool vehicleDetected(){
     printf("Is there a vehicle in front of the gate? (y/n): ");
 	return takingInput(validInputs);
 
-
     // TODO: here would be the actual sensor reading logic
     //return false;
 }
@@ -27,8 +26,8 @@ bool vehicalPassing() {
 }
 
 void openGate() {
-    char licensePlate[8];
-    char DBlicensePlate[8];
+    char licensePlate[9];
+    char DBlicensePlate[9];
     printf("Enter license plate: ");
     scanf_s("%8s", licensePlate, (unsigned)sizeof(licensePlate));
     if (!strcmp(licensePlate, "manager")){
@@ -36,7 +35,7 @@ void openGate() {
 		managerMode();
 		return;
 	}
-    char ownerName[30];
+    char ownerName[31];
     if (checkLicensePlate(licensePlate,ownerName)) {
         printf("License plate %s recognized, Hello %s \n", licensePlate, ownerName);
         printf("Gate is opening!\n");

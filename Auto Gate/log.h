@@ -7,6 +7,7 @@
 
 bool initLog(const char* filename);
 void writeLog(const char* plate, bool allowed);
+void printLogs(void);
 void closeLog(void);
 
 #endif

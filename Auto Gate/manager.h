@@ -13,4 +13,6 @@ void viewAllCars(void);
 void deleteCarFromDB(void);
 void deleteAllCars(void);
 void viewLogs(void);
+
 void getCarDetails(char*, char*);
+void getPlateDetails(char*);

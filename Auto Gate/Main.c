@@ -17,19 +17,18 @@ int main() {
     addCar("ABC1234", "John Doe");
     addCar("XYZ5678", "Jane Smith");
 	addCar("LMN8901", "Alice Johnson");
-	//addCar("TEST123", "Test User");
-	//addCar("TEST456", "Another User");
+
 
     char choice;
     while (1) { // infinity loop
-        printf("the system is up and running.\npress q to exit\n");
+        printf("\nthe system is up and running...\npress q to exit\n");
         //scanf_s(" %c", &choice, 1);
         //if (choice == 'q' || choice == 'Q')
         if (vehicleDetected()) {
             openGate();
             closeGate();
         }
-        sleep(3); // wait for 3 seconds before next check to avoid overloading the CPU
+        sleep(1); // wait for 3 seconds before next check to avoid overloading the CPU
     }
     return 0;
 }

@@ -27,7 +27,7 @@ bool takingInput(const char* validInputs) {
                 return takingInput(validInputs);
             }
             // Handle quit input
-            printf("Exiting the program.\n");
+            printf("Exiting the program...\n");
             sleep(1);
             closeLog();
             closeDB();
